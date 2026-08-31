@@ -82,6 +82,10 @@ Repeatable procedures for anything you do more than once: writing, research, pla
 
 Each workflow gets its own folder, context file, log, and optional workflow-scoped skills.
 
+### Dashboard
+
+A lightweight HTML/CSS dashboard shell for linking to workflow dashboard pages. Start with the default dashboard, then add pages under `dashboard/workflows/<workflow-name>/` as your workflows grow.
+
 ### Wikis
 
 Structured knowledge bases for topics you care about. Put source material in `raw/`, let your AI synthesize pages in `wiki/`, and build a reference system that compounds over time.

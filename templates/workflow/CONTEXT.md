@@ -9,6 +9,7 @@
 - `CONTEXT.md` - this file.
 - `LOG.md` - append-only journal of actions and runs for this workflow.
 - If applicable, `<skill-name>/` - workflow-scoped skill directory. Each skill directory contains its own `SKILL.md`.
+- If requested, `../../dashboard/workflows/{{WORKFLOW_NAME}}/index.html` - optional dashboard page for this workflow.
 
 ## Usage / Trigger Conditions
 
@@ -22,12 +23,15 @@ What this workflow needs to run: files, parameters, context, prerequisite state.
 
 What this workflow produces: files, side effects, status, downstream state changes.
 
+If requested, this workflow may also produce an optional workflow dashboard page under `dashboard/workflows/{{WORKFLOW_NAME}}/`.
+
 ## Steps
 
 1. First step.
 2. Next step.
 3. Continue as needed.
-4. Append an entry to `LOG.md`.
+4. If the user requests a dashboard page, create `dashboard/workflows/{{WORKFLOW_NAME}}/index.html`, reuse `dashboard/styles.css` unless local styling is needed, add or update the sidebar link in `dashboard/index.html`, and document the dashboard page in this file's Outputs and Related sections.
+5. Append an entry to `LOG.md`.
 
 ## Dependencies
 
@@ -40,6 +44,7 @@ List everything a fresh machine needs to run this workflow. Explicitly say "None
 - **API keys / env vars**: name, purpose, source URL, approximate cost, or "None".
 - **External accounts / services**: services requiring signup, or "None".
 - **Internal (CenterOS)**: other workflows, wikis, skills, templates, or MCPs this relies on. List each with relative path and a short note, or "None".
+- **Dashboard (optional)**: `../../dashboard/` if this workflow includes a dashboard page, or "None".
 
 ## Known Issues / Gotchas
 
@@ -48,6 +53,7 @@ List everything a fresh machine needs to run this workflow. Explicitly say "None
 ## Related
 
 - Pointers to related workflows, wikis, or parent directories.
+- If this workflow has a dashboard page, link `../../dashboard/workflows/{{WORKFLOW_NAME}}/`.
 
 ## Revision History
 

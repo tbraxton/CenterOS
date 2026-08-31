@@ -67,6 +67,14 @@ Public visual assets for the CenterOS template, including the initial SVG logo a
 **Status:** active
 **Last updated:** 2026-08-18
 
+### Dashboard
+
+Static HTML/CSS dashboard shell for CenterOS, with sidebar links to workflow dashboard pages.
+
+**Path:** `dashboard/`
+**Status:** active
+**Last updated:** 2026-08-31
+
 <!-- For anything that is not a workflow or wiki: templates, tools, data sets, apps, etc. Same format. -->
 
 ---

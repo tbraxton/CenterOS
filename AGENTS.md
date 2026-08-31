@@ -90,6 +90,18 @@ Durable, cross-session memory [AI_NAME] keeps about this project: feedback, refe
 
 Read `memory/MEMORY.md` at the start of every session. Write new memories here, not to any per-user cache outside the repo.
 
+### `dashboard/`
+
+Static HTML/CSS dashboard shell for CenterOS. The default dashboard lives at `dashboard/index.html` and links to workflow dashboard pages as users create them.
+
+When creating a workflow dashboard page:
+
+- Place it under `dashboard/workflows/<workflow-name>/index.html`.
+- Keep styling reusable through `dashboard/styles.css` unless the page truly needs local CSS.
+- Add or update the sidebar link in `dashboard/index.html`.
+- Use paths relative to the repo root.
+- Do not add dynamic behavior unless the workflow explicitly needs it.
+
 ### Other Directories
 
 Additional top-level folders may be added over time, such as `data/`, `tools/`, or `skills/`. Every new directory must get its own `CONTEXT.md`.
@@ -149,6 +161,7 @@ When working in this repo:
 4. When asked to run or extend a workflow, first read its `CONTEXT.md`.
 5. Keep structure consistent: one concept per directory, clearly named, documented via `CONTEXT.md`.
 6. Document external dependencies explicitly. Include runtime, package installs, system binaries, API keys/env vars, external accounts, and internal dependencies. Say "None" for categories that do not apply.
+7. When a workflow includes a dashboard page, document that page in the workflow's `CONTEXT.md` Outputs and Related sections.
 
 ## SYSTEM_INDEX.md - System Index
 

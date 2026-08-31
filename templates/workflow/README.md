@@ -19,6 +19,7 @@ When [PRINCIPAL] asks for a new workflow named `<workflow-name>`:
    - `{{DATE}}` - today's date in `YYYY-MM-DD` format.
    - `{{TIMESTAMP}}` - full ISO 8601 timestamp with timezone offset.
 4. Fill in the real steps, inputs, outputs, dependencies, and known issues sections.
-5. Ensure the final step of every workflow is: `Append an entry to LOG.md.`
-6. Update the root `SYSTEM_INDEX.md` with a one-line entry for the new workflow.
-7. Append entries to the root `LOG.md` and to `workflows/LOG.md` if that file exists.
+5. If the user requests a dashboard page, create `dashboard/workflows/<workflow-name>/index.html`, add or update the sidebar link in `dashboard/index.html`, and document the dashboard page in the workflow's `CONTEXT.md`.
+6. Ensure the final step of every workflow is: `Append an entry to LOG.md.`
+7. Update the root `SYSTEM_INDEX.md` with a one-line entry for the new workflow.
+8. Append entries to the root `LOG.md` and to `workflows/LOG.md` if that file exists.

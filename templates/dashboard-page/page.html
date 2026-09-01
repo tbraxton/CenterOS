@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{PAGE_TITLE}}</title>
+  <meta name="description" content="{{PAGE_DESCRIPTION}}">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="dashboard-frame-page">
+  <header class="topbar">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../../pages/home.html">CenterOS</a>
+      <span aria-hidden="true">/</span>
+      <span>Workflows</span>
+      <span aria-hidden="true">/</span>
+      <span>{{BREADCRUMB_CURRENT}}</span>
+    </nav>
+    <div class="install-status" aria-label="Install status">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>Ready</span>
+    </div>
+  </header>
+
+  <section class="dashboard-page">
+    <header class="dashboard-page-header">
+      <p class="eyebrow">Workflow Dashboard</p>
+      <h1>{{WORKFLOW_NAME}}</h1>
+      <p>{{PAGE_DESCRIPTION}}</p>
+    </header>
+
+    <section class="dashboard-grid">
+      <article class="metric-card">
+        <strong>Status</strong>
+        <span>Ready</span>
+      </article>
+      <article class="metric-card">
+        <strong>Runs</strong>
+        <span>0</span>
+      </article>
+      <article class="metric-card">
+        <strong>Outputs</strong>
+        <span>0</span>
+      </article>
+    </section>
+  </section>
+</body>
+</html>

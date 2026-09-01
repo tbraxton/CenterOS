@@ -16,65 +16,64 @@
       </a>
 
       <nav class="workflow-nav" aria-label="Workflow dashboard links">
-        <a class="nav-item active" href="#">
+        <a class="nav-item active" href="pages/home.html" target="dashboard-frame">
           <span class="nav-icon" aria-hidden="true">
             <i class="bi bi-bar-chart-line"></i>
           </span>
           <span>Dashboard</span>
         </a>
-        <a class="nav-item" href="#">
+        <!-- WORKFLOW_LINKS_START -->
+        <a class="nav-item" href="pages/workflow-placeholder.html#workflow-1" target="dashboard-frame">
           <span class="nav-icon" aria-hidden="true">
             <i class="bi bi-file-earmark-text"></i>
           </span>
           <span>Workflow 1</span>
         </a>
-        <a class="nav-item" href="#">
+        <a class="nav-item" href="pages/workflow-placeholder.html#workflow-2" target="dashboard-frame">
           <span class="nav-icon" aria-hidden="true">
             <i class="bi bi-calendar3"></i>
           </span>
           <span>Workflow 2</span>
         </a>
-        <a class="nav-item" href="#">
+        <a class="nav-item" href="pages/workflow-placeholder.html#workflow-3" target="dashboard-frame">
           <span class="nav-icon" aria-hidden="true">
             <i class="bi bi-compass"></i>
           </span>
           <span>Workflow 3</span>
         </a>
-        <a class="nav-item" href="#">
+        <a class="nav-item" href="pages/workflow-placeholder.html#workflow-4" target="dashboard-frame">
           <span class="nav-icon" aria-hidden="true">
             <i class="bi bi-lightbulb"></i>
           </span>
           <span>Workflow 4</span>
         </a>
-        <a class="nav-item" href="#">
+        <a class="nav-item" href="pages/workflow-placeholder.html#workflow-5" target="dashboard-frame">
           <span class="nav-icon" aria-hidden="true">
             <i class="bi bi-sliders"></i>
           </span>
           <span>Workflow 5</span>
         </a>
+        <!-- WORKFLOW_LINKS_END -->
       </nav>
     </aside>
 
     <main class="main-panel">
-      <header class="topbar">
-        <nav class="breadcrumbs" aria-label="Breadcrumb">
-          <a href="index.html">CenterOS</a>
-          <span aria-hidden="true">/</span>
-          <span>Dashboard</span>
-        </nav>
-        <div class="install-status" aria-label="Install status">
-          <span class="status-dot" aria-hidden="true"></span>
-          <span>Ready</span>
-        </div>
-      </header>
-
-      <section class="dashboard-home" aria-labelledby="dashboard-title">
-        <div class="center-message">
-          <h1 id="dashboard-title">CenterOS Dashboard</h1>
-          <p>A Dashboard For Your Workflows.</p>
-        </div>
-      </section>
+      <iframe
+        class="dashboard-frame"
+        name="dashboard-frame"
+        title="CenterOS dashboard content"
+        src="pages/home.html"
+      ></iframe>
     </main>
   </div>
+
+  <script>
+    document.querySelectorAll(".workflow-nav .nav-item").forEach((item) => {
+      item.addEventListener("click", () => {
+        document.querySelectorAll(".workflow-nav .nav-item").forEach((link) => link.classList.remove("active"));
+        item.classList.add("active");
+      });
+    });
+  </script>
 </body>
 </html>

@@ -69,7 +69,7 @@ Public visual assets for the CenterOS template, including the initial SVG logo a
 
 ### Dashboard
 
-Static HTML/CSS dashboard shell for CenterOS, with sidebar links to workflow dashboard pages.
+Static HTML/CSS dashboard shell for CenterOS. `dashboard/index.html` owns the sidebar and iframe container; iframe pages own their own topbars, breadcrumbs, and content.
 
 **Path:** `dashboard/`
 **Status:** active

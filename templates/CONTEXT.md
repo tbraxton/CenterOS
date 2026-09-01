@@ -2,17 +2,18 @@
 
 ## Purpose
 
-Central home for all scaffolding templates used to bootstrap new components in CenterOS. Using templates keeps every workflow, wiki, and skill structurally consistent so future sessions can navigate any directory without surprises.
+Central home for all scaffolding templates used to bootstrap new components in CenterOS. Using templates keeps every workflow, wiki, dashboard page, and skill structurally consistent so future sessions can navigate any directory without surprises.
 
 ## Contents
 
 - `workflow/` - template files for creating a new workflow directory. Contains a template `CONTEXT.md`, `LOG.md`, and a short `README.md` explaining usage.
 - `wiki/` - template files for creating a new wiki directory. Contains a template `CONTEXT.md` and a `README.md` describing placeholders. Used by `workflows/create-wiki/`.
+- `dashboard-page/` - template files for creating iframe-loaded workflow dashboard pages.
 - Future `skill/` - templates for a new skill directory.
 
 ## Usage / Trigger Conditions
 
-[AI_NAME] uses these templates whenever [PRINCIPAL] asks to create a new workflow, wiki, or skill. [AI_NAME] copies the appropriate template files into the new directory and replaces all `{{PLACEHOLDER}}` tokens with real values.
+[AI_NAME] uses these templates whenever [PRINCIPAL] asks to create a new workflow, wiki, dashboard page, or skill. [AI_NAME] copies the appropriate template files into the new directory and replaces all `{{PLACEHOLDER}}` tokens with real values.
 
 ## Inputs
 
@@ -22,7 +23,7 @@ Central home for all scaffolding templates used to bootstrap new components in C
 
 ## Outputs
 
-A fully scaffolded new directory with its own `CONTEXT.md` and `LOG.md`, ready to be filled in.
+A fully scaffolded new directory or page, ready to be filled in.
 
 ## Steps
 
@@ -56,3 +57,4 @@ This directory is a container, not a runnable workflow. The procedure for using 
 - **2026-04-15** - Created. Initial version with workflow template.
 - **2026-04-15** - Added wiki template at `templates/wiki/`.
 - **2026-08-18** - Converted instance-specific references to first-run placeholders for template distribution.
+- **2026-08-31** - Added dashboard page template references.

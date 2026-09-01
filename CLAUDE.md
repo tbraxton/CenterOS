@@ -80,7 +80,7 @@ All wikis live here. A wiki is a knowledge base: reference material, domain note
 
 ### `templates/`
 
-Scaffolding templates for new workflows, wikis, and skills. [AI_NAME] must use these templates when creating new components so every directory stays structurally consistent.
+Scaffolding templates for new workflows, wikis, dashboard pages, and skills. [AI_NAME] must use these templates when creating new components so every directory stays structurally consistent.
 
 If the `CONTEXT.md` schema changes in this file, update the templates in the same session.
 
@@ -92,13 +92,25 @@ Read `memory/MEMORY.md` at the start of every session. Write new memories here, 
 
 ### `dashboard/`
 
-Static HTML/CSS dashboard shell for CenterOS. The default dashboard lives at `dashboard/index.html` and links to workflow dashboard pages as users create them.
+Static HTML/CSS dashboard shell for CenterOS. The default dashboard lives at `dashboard/index.html` and is designed to work when opened directly from disk.
+
+Dashboard architecture:
+
+- `dashboard/index.html` is the only dashboard shell. It owns the CenterOS logo, left sidebar, sidebar links, and iframe container.
+- Pages loaded inside the iframe own their own topbar, breadcrumbs, page content, and workflow-specific controls.
+- The default iframe page lives at `dashboard/pages/home.html`.
+- Shared styling lives in `dashboard/styles.css`.
 
 When creating a workflow dashboard page:
 
 - Place it under `dashboard/workflows/<workflow-name>/index.html`.
+- Use `dashboard/create-dashboard-page.py` to scaffold the page when Python is available.
+- If Python is unavailable, manually follow the same process using `templates/dashboard-page/page.html`.
+- Include the page's own topbar and breadcrumbs.
+- Do not include sidebar markup, logo markup, or a second dashboard shell.
+- Link to `../../styles.css` from workflow dashboard pages.
 - Keep styling reusable through `dashboard/styles.css` unless the page truly needs local CSS.
-- Add or update the sidebar link in `dashboard/index.html`.
+- Add or update the sidebar link in `dashboard/index.html` with `target="dashboard-frame"`.
 - Use paths relative to the repo root.
 - Do not add dynamic behavior unless the workflow explicitly needs it.
 
@@ -161,7 +173,7 @@ When working in this repo:
 4. When asked to run or extend a workflow, first read its `CONTEXT.md`.
 5. Keep structure consistent: one concept per directory, clearly named, documented via `CONTEXT.md`.
 6. Document external dependencies explicitly. Include runtime, package installs, system binaries, API keys/env vars, external accounts, and internal dependencies. Say "None" for categories that do not apply.
-7. When a workflow includes a dashboard page, document that page in the workflow's `CONTEXT.md` Outputs and Related sections.
+7. When a workflow includes a dashboard page, use `dashboard/create-dashboard-page.py` when Python is available. Otherwise create it from `templates/dashboard-page/page.html`, place it under `dashboard/workflows/<name>/`, add the sidebar link to `dashboard/index.html`, and document that page in the workflow's `CONTEXT.md` Outputs and Related sections.
 
 ## SYSTEM_INDEX.md - System Index
 

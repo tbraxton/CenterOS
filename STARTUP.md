@@ -16,9 +16,9 @@ Do not ask for secrets, passwords, API keys, private addresses, or anything the 
 
 Replace these identity tokens during first-run setup:
 
-- `[AI_NAME]` - the AI's chosen or assigned name. If the user does not want to name the AI, use `CenterOS`.
-- `[PRINCIPAL]` - the user's name.
-- `[PRINCIPAL_NICKNAME]` - what the AI should call the user in normal conversation.
+- `Jarvis` - the AI's chosen or assigned name. If the user does not want to name the AI, use `CenterOS`.
+- `Thomas` - the user's name.
+- `Thomas` - what the AI should call the user in normal conversation.
 
 Keep `CenterOS` when the text refers to the public template/framework itself, not this user's personalized instance.
 

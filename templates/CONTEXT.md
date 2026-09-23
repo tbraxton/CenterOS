@@ -13,13 +13,13 @@ Central home for all scaffolding templates used to bootstrap new components in C
 
 ## Usage / Trigger Conditions
 
-[AI_NAME] uses these templates whenever [PRINCIPAL] asks to create a new workflow, wiki, dashboard page, or skill. [AI_NAME] copies the appropriate template files into the new directory and replaces all `{{PLACEHOLDER}}` tokens with real values.
+Jarvis uses these templates whenever Thomas asks to create a new workflow, wiki, dashboard page, or skill. Jarvis copies the appropriate template files into the new directory and replaces all `{{PLACEHOLDER}}` tokens with real values.
 
 ## Inputs
 
 - The name of the new component, such as `daily-standup` or `product-catalog`.
-- A one-line purpose from [PRINCIPAL].
-- Any additional detail [PRINCIPAL] provides: inputs, outputs, steps, constraints, or dependencies.
+- A one-line purpose from Thomas.
+- Any additional detail Thomas provides: inputs, outputs, steps, constraints, or dependencies.
 
 ## Outputs
 

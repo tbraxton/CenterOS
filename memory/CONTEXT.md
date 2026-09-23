@@ -4,7 +4,7 @@
 
 Durable, cross-session memory for CenterOS. This folder lives inside the repo so it travels with the project and remains visible to future AI sessions.
 
-This is where [AI_NAME] writes and reads durable information about working with [PRINCIPAL]: feedback, references, user profile details, project context, decisions, and why-we-did-it notes.
+This is where Jarvis writes and reads durable information about working with Thomas: feedback, references, user profile details, project context, decisions, and why-we-did-it notes.
 
 ## Contents
 
@@ -13,9 +13,9 @@ CONTEXT.md       -- this file
 LOG.md           -- append-only log of memory changes
 MEMORY.md        -- the index. Always load this at session start.
 
-feedback_*.md    -- corrections and validated approaches [PRINCIPAL] has given [AI_NAME]
+feedback_*.md    -- corrections and validated approaches Thomas has given Jarvis
 reference_*.md   -- facts, canonical spellings, and pointers to external systems
-user_*.md        -- information about [PRINCIPAL]'s role, goals, preferences, and knowledge
+user_*.md        -- information about Thomas's role, goals, preferences, and knowledge
 project_*.md     -- ongoing initiatives, decisions, deadlines, and motivations
 ```
 
@@ -27,9 +27,9 @@ Read `MEMORY.md` at the start of every session in this repo. Pull individual mem
 
 Write a new memory when:
 
-- [PRINCIPAL] gives corrective feedback, especially repeated feedback.
-- [PRINCIPAL] confirms a non-obvious approach worked.
-- A durable fact about [PRINCIPAL], their work, family, tools, or preferences surfaces.
+- Thomas gives corrective feedback, especially repeated feedback.
+- Thomas confirms a non-obvious approach worked.
+- A durable fact about Thomas, their work, family, tools, or preferences surfaces.
 - A durable project decision is made that would be non-obvious to future sessions.
 
 Do not write a memory for:
@@ -41,8 +41,8 @@ Do not write a memory for:
 
 ## Inputs
 
-- [AI_NAME]'s running conversation with [PRINCIPAL].
-- [AI_NAME]'s observation of what [PRINCIPAL] corrects, validates, or leaves in place.
+- Jarvis's running conversation with Thomas.
+- Jarvis's observation of what Thomas corrects, validates, or leaves in place.
 
 ## Outputs
 
@@ -76,7 +76,7 @@ Do not write a memory for:
 - `../CLAUDE.md` - project-level instructions.
 - `../AGENTS.md` - project-level instructions.
 - `../BOOTSTRAP.md` - session-start reading order.
-- `../PRINCIPAL.md` - profile for [PRINCIPAL].
+- `../PRINCIPAL.md` - profile for Thomas.
 
 ## Revision History
 

@@ -1,12 +1,12 @@
 # CenterOS Template - System Index
 
-This repo is a reusable starter template for building a personalized AI operating system. After cloning, run `STARTUP.md` once to turn the generic template into CenterOS.
+This repo is the personalized CenterOS instance for Thomas. It is configured to support personal knowledge management, household administration, and efficient AI workflow use.
 
-Every workflow, wiki, or major component gets a short entry here so [PRINCIPAL] can review the system at a glance.
+Every workflow, wiki, or major component gets a short entry here so Thomas can review the system at a glance.
 
-**Maintained by:** [AI_NAME]
+**Maintained by:** Jarvis
 **Framework:** CenterOS
-**Instance name:** CenterOS
+**Instance name:** Thomas's CenterOS
 
 ---
 
@@ -53,7 +53,7 @@ One short sentence describing what it covers.
 
 ### Templates
 
-Scaffolding for new workflows and wikis. [AI_NAME] uses these to bootstrap new components.
+Scaffolding for new workflows and wikis. Jarvis uses these to bootstrap new components.
 
 **Path:** `templates/`
 **Status:** active
@@ -107,13 +107,13 @@ Root instructions for ChatGPT Codex or compatible harnesses when operating insid
 
 ### SOUL.md
 
-[AI_NAME]'s identity, purpose, disposition, operating principles, and production output rules.
+Jarvis's identity, purpose, disposition, operating principles, and production output rules.
 
 **Path:** `SOUL.md`
 
 ### PRINCIPAL.md
 
-Concise profile for [PRINCIPAL]: identity, work/life context, patterns, and collaboration style.
+Concise profile for Thomas: identity, work/life context, patterns, and collaboration style.
 
 **Path:** `PRINCIPAL.md`
 
@@ -127,4 +127,5 @@ Durable, cross-session memory for CenterOS.
 
 ## Changelog
 
+- **2026-09-22** - Completed first-run setup for the personalized instance: Jarvis is installed for Thomas, the system profile was filled in, and the repo was configured for personal knowledge and household operations.
 - **2026-04-15** - Initialized CenterOS template: created `CLAUDE.md`, `AGENTS.md`, `SOUL.md`, and `README.md`.

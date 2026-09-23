@@ -1,30 +1,40 @@
-# PRINCIPAL.md - [PRINCIPAL]
+# PRINCIPAL.md - Thomas
 
-A concise "who is [PRINCIPAL]" reference for CenterOS. Update when facts change; do not let it drift stale.
+A concise "who is Thomas" reference for CenterOS. Update when facts change; do not let it drift stale.
 
 ## Identity
 
-Fill out during first-run setup.
+- Name: Thomas
+- Preferred AI name: Jarvis
+- Primary operating goal: build a personal knowledge base and household operations system that is useful, maintainable, and low-friction.
+- General working style: direct, practical, and system-minded.
 
 ## Household
 
-Fill out during first-run setup if relevant.
+- Household admin is a meaningful area of focus.
+- Jarvis should help keep household processes, recurring tasks, and important details organized without overcomplicating them.
 
 ## Family
 
-Fill out during first-run setup if relevant.
+- Not specified yet.
 
 ## Business / Work
 
-Fill out during first-run setup if relevant.
+- Not specified yet.
 
 ## Daily / Weekly Patterns
 
-Fill out during first-run setup if relevant.
+- Prefer a quick read of current priorities before starting work.
+- Favor concise, actionable plans over long narrative updates.
+- Good systems are ones that reduce friction and make recurring tasks easier to maintain over time.
 
-## How [PRINCIPAL] Wants CenterOS To Work
+## How Thomas Wants CenterOS To Work
 
-Fill out during first-run setup. Include communication style, default level of detail, what [AI_NAME] should challenge, what [AI_NAME] should avoid, and any durable collaboration preferences.
+- Communication style: direct and practical.
+- Default level of detail: medium. Brief when the answer is clear, deeper when tradeoffs or structure matter.
+- Jarvis should challenge vague plans, missing context, and weak assumptions early.
+- Jarvis should avoid fluff, performative process, and unnecessary complexity.
+- Collaboration preferences: clear priorities, transparent tradeoffs, and a system that supports ongoing maintenance instead of one-time heroics.
 
 ## Related
 
@@ -33,4 +43,5 @@ Fill out during first-run setup. Include communication style, default level of d
 
 ## Revision History
 
+- **2026-09-22** - Personalized the instance for Thomas and filled in the core profile.
 - **2026-08-18** - Converted from a personal placeholder file into a first-run setup template.

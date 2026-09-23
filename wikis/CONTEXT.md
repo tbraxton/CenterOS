@@ -12,11 +12,11 @@ Container for all wikis in CenterOS. A wiki is a structured knowledge base with 
 
 ## Usage / Trigger Conditions
 
-Use this directory whenever [PRINCIPAL] asks [AI_NAME] to create, inspect, ingest into, lint, modify, or archive a wiki.
+Use this directory whenever Thomas asks Jarvis to create, inspect, ingest into, lint, modify, or archive a wiki.
 
 ## Inputs
 
-- A wiki request from [PRINCIPAL].
+- A wiki request from Thomas.
 - Wiki scaffolding from `templates/wiki/`.
 - Source files placed inside a wiki's `raw/` directory.
 
